@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#74777f",
+              "on-surface-variant": "#44474e",
+              "surface-container-high": "#e6e8ea",
+              "surface-container-low": "#f2f4f6",
+              "inverse-on-surface": "#eff1f3",
+              "surface-dim": "#d8dadc",
+              "on-background": "#191c1e",
+              "primary": "#001431",
+              "on-primary-fixed": "#001b3d",
+              "primary-fixed-dim": "#aec7f7",
+              "on-surface": "#191c1e",
+              "on-secondary": "#ffffff",
+              "surface-tint": "#465f89",
+              "error": "#ba1a1a",
+              "background": "#f7f9fb",
+              "tertiary-container": "#451f00",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#00367e",
+              "on-tertiary-fixed-variant": "#693b18",
+              "tertiary-fixed-dim": "#fbb88a",
+              "secondary-fixed": "#d9e2ff",
+              "on-secondary-fixed-variant": "#004398",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#afc6ff",
+              "outline-variant": "#c4c6cf",
+              "on-primary": "#ffffff",
+              "surface-container": "#eceef0",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffdcc6",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "on-tertiary-container": "#be835a",
+              "on-secondary-fixed": "#001943",
+              "surface-bright": "#f7f9fb",
+              "inverse-surface": "#2d3133",
+              "surface": "#f7f9fb",
+              "on-primary-container": "#7891be",
+              "on-error": "#ffffff",
+              "primary-container": "#0b2950",
+              "on-tertiary-fixed": "#301400",
+              "secondary-container": "#75a1ff",
+              "secondary": "#285bb4",
+              "inverse-primary": "#aec7f7",
+              "surface-container-highest": "#e0e3e5",
+              "primary-fixed": "#d6e3ff",
+              "tertiary": "#260e00",
+              "on-primary-fixed-variant": "#2e476f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
+                SPACE SOLUTIONS
+            </div>
+<div class="hidden md:flex items-center gap-8 font-manrope text-sm font-semibold tracking-tight">
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="index">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="about">About Us</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="services">Services</a>
+<a class="text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="process">Process</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-80 transition-all active:scale-95">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-950/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+<aside id="mobile-menu-panel" class="fixed top-0 left-0 h-full w-[85vw] max-w-xs bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-100 shadow-2xl border-r border-slate-200/80 dark:border-slate-800 transform -translate-x-full transition-transform duration-300 z-50">
+<div class="flex items-center justify-between px-6 py-5 border-b border-slate-200/70 dark:border-slate-800">
+<span class="font-headline font-bold text-lg uppercase text-primary dark:text-white">Menu</span>
+<button id="mobile-menu-close" type="button" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+<span class="material-symbols-outlined text-2xl">close</span>
+<span class="sr-only">Close menu</span>
+</button>
+</div>
+<div class="px-6 py-6 space-y-4">
+<a href="index.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Home</a>
+<a href="about.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">About Us</a>
+<a href="services.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Services</a>
+<a href="process.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Process</a>
+</div>
+<div class="px-6 mt-auto pb-6">
+<button class="w-full bg-primary text-on-primary py-3 rounded-md font-semibold text-sm hover:opacity-90 transition">Get a Quote</button>
+</div>
+</aside>
+<main class="pt-24 pb-20">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="max-w-7xl mx-auto px-8 py-20 md:py-32 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative z-10">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-none mb-8">
+                    Blueprint for <br/><span class="text-secondary">Success.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+                    Our architectural approach to remodeling removes the guesswork. We define every structural detail before a single hammer is swung, ensuring precision in both cost and timeline.
+                </p>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">architecture</span>
+<span class="text-primary font-headline font-bold uppercase tracking-widest text-sm">Engineering Certainty</span>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="high-end architectural blueprint lying on a minimalist wooden table with a designer drafting pen and soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHjCTwJ6mDyuwCFleCGhPa4fYta82jSA9ri3YRtWCq184-xLdNjXIekRy6BusSJOsjnBMx_x7m5YkTobFE7sSRvNnwSD_sXLU6dkhxZ-LjuuVGCiPlG3hQDkSontUrRMfaB9ksHysAEMDN6D9yp0ryx98kJ3izjCU41D4UKJJC4D8ol1msV6iv-Mpj7QFdZuhspWc_d-PhT50ddRBr620LLWRCf6xbsK6KW3bokjQNgr_P3VFBT4hVryLWI7mApVDUAbo-wFG7YMY"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl hidden lg:block border border-outline-variant/10">
+<p class="font-headline text-3xl font-bold text-primary mb-2">0%</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Uncertainty Rate</p>
+</div>
+</div>
+</section>
+<!-- The Process: Vertical Asymmetrical Timeline -->
+<section class="bg-surface-container-low py-24 md:py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 text-center md:text-left">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">The Methodology</h2>
+<p class="text-on-surface-variant max-w-xl">Every project follows our rigid three-phase structural protocol to guarantee high-end results.</p>
+</div>
+<div class="relative space-y-24">
+<!-- Vertical Line (Draftsman Pencil Line) -->
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-outline-variant/30 -translate-x-1/2"></div>
+<!-- Step 1: Consultation -->
+<div class="relative grid md:grid-cols-2 gap-12 items-start group">
+<div class="md:text-right md:pr-20 order-2 md:order-1">
+<h3 class="font-headline text-3xl font-bold text-primary mb-4">01. Consultation</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                                We begin with a deep-dive analysis of your current space. This phase isn't just a walk-through; it's a strategic session to define your lifestyle goals, aesthetic requirements, and functional necessities.
+                            </p>
+<div class="flex flex-wrap gap-2 md:justify-end">
+<span class="px-3 py-1 bg-surface-container-high rounded text-xs font-bold text-on-surface-variant uppercase">Site Analysis</span>
+<span class="px-3 py-1 bg-surface-container-high rounded text-xs font-bold text-on-surface-variant uppercase">Goal Alignment</span>
+</div>
+</div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-primary rounded-full flex items-center justify-center border-4 border-surface z-10">
+<span class="text-[10px] text-white font-bold">1</span>
+</div>
+<div class="md:pl-20 order-1 md:order-2">
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm group-hover:shadow-md transition-all">
+<img class="w-full h-full object-cover" data-alt="professional architect in a modern office discussing plans with a client over a minimalist table with structural models" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc8JrUckFD7oQUj9NJysPBmPWyo1bNiBVxFdMlyHJ4t3xKqz-h7bpvYbpsP3iKg366TJS0mf3SCCXetiYenHQQZ8GNhoBBvRSVnNR-7kE6DgpqL-WScC4-u-cuUzQ5BXQ7ACB0Ghwr7jnjqy5xDxiwtiGPj13rGCmoh7Rb4rZd_GJ40fg8QM-a4wAQaf0P_mXwO_N2Oz7gh0jKDm-CliqBrMIJizHqKAQMEgr4Zji24bTyqEHbfEo-ZWDDjrJUeNMOJeGVYrAvMTU"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Drafting & Design -->
+<div class="relative grid md:grid-cols-2 gap-12 items-start group">
+<div class="md:pr-20 order-1">
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm group-hover:shadow-md transition-all">
+<img class="w-full h-full object-cover" data-alt="high-end 3D rendering of a luxury kitchen remodel displayed on a large computer monitor in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1snBJHG8PF2IOPPQ2Tg_T2ofK3j9EvgyGQuOSPbezKQF-Dje78MZFcdef0I4IVnIvySnoA2TMg_3aLzgd6p6VFHAnIvNymodnzT6raBhi8IdM5_YA8PQ6J7B0YSLUe8R0mMldGc7FhsPZsXX_6rGiXK0N2yBnshH6II3eytkd3WH3j7In2i5YMaSNCJqbZiCFF4NBcdaR9iDn5xpxx6_XteB7AKxyv9c9lpjSbCvPYLFxai9ECgFH8eEbrrUy0xLSKOOdJFF6Rvs"/>
+</div>
+</div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-secondary rounded-full flex items-center justify-center border-4 border-surface z-10">
+<span class="text-[10px] text-white font-bold">2</span>
+</div>
+<div class="md:pl-20 order-2">
+<h3 class="font-headline text-3xl font-bold text-primary mb-4">02. Drafting &amp; Design</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                                The technical foundation. We create meticulous digital blueprints and 3D renderings that account for every square inch. This phase defines the budget down to the cent, eliminating the risk of "scope creep."
+                            </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">payments</span>
+<span class="text-sm font-semibold text-on-surface">Fixed-Cost Budgeting</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">precision_manufacturing</span>
+<span class="text-sm font-semibold text-on-surface">Structural Specifications</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3: Execution -->
+<div class="relative grid md:grid-cols-2 gap-12 items-start group">
+<div class="md:text-right md:pr-20 order-2 md:order-1">
+<h3 class="font-headline text-3xl font-bold text-primary mb-4">03. Execution</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                                Our master craftsmen take the finalized blueprint and bring it to life. Because of our rigorous phase 1 and 2, execution is a clean, swift process focused on artisanal quality and structural integrity.
+                            </p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-headline font-bold text-sm tracking-wide uppercase hover:opacity-90 active:scale-95 transition-all">
+                                View Final Work
+                            </button>
+</div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 bg-primary-container rounded-full flex items-center justify-center border-4 border-surface z-10">
+<span class="text-[10px] text-white font-bold">3</span>
+</div>
+<div class="md:pl-20 order-1 md:order-2">
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm group-hover:shadow-md transition-all">
+<img class="w-full h-full object-cover" data-alt="close-up of master craftsman installing high-end custom cabinetry with surgical precision in a contemporary home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD66ort6-llB_6DlvRI-EKxmZG7QV9r1plr4QY5jhXItgIn9l6waJO1b1Wj7b2mR_cP_QTTiClfaSCYUPvex15ukuIXr4C8JpRodwcju2Lh6I0ibYlhIBpNyMUHPnJMJQHvoM7lpaLv8Lh3dR_y2MfPyGgJjaalY9AejkBjDWU_cXeGSupxua52ZzRnDOJf3PTF4Tc_TDGqvMu8XxVpzjNCmyC9ag_dmxaortalGPymuJLZhaRX7Y4omVk4KwNXoyA7b0VpaJz1SQo"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: The Preliminary Promise -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="bg-primary-container rounded-xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+<img class="w-full h-full object-cover" data-alt="close up of drafting tools and professional architectural plans with dramatic low-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQSUNSQELkxlDoo1a3sZMa9XEkEmJuWSzKFijCoyeebT3iSIOhHjBRwzPvG2l6w8ySkrWSf8seoJU2PJ9GVcGzhdcAoByBLXb1AWbtmuH__8nSX8svYoIh0jxs7dXj4Ygv9cqpXVCf37g1UIfyzOXs9IdtYlSmor9SjUINnfiS9PDU1q2Uakn9uplysoGe-GsfJipohV3TLz-tReNFcFxwe1a0Q8OUOOxUGfRTgN3qoA4cHSzENsA1r19lWt4b0g306KjZo-hdaoY"/>
+</div>
+<div class="relative z-10 flex-1">
+<h2 class="font-headline text-4xl font-bold text-white mb-6">Eliminate Uncertainty.</h2>
+<p class="text-on-primary-container text-lg mb-8 leading-relaxed max-w-lg">
+                        The preliminary project is our secret to success. By investing in the technical design phase, we guarantee you'll never face unexpected costs or extended timelines. 
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 shadow-lg">
+                            Start Your Consultation
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 text-white border border-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold transition-all hover:bg-white/20">
+                            Download Process PDF
+                        </button>
+</div>
+</div>
+<div class="relative z-10 w-full md:w-1/3 grid grid-cols-2 gap-4">
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-lg border border-white/10">
+<p class="text-secondary font-headline text-3xl font-extrabold mb-1">100%</p>
+<p class="text-[10px] text-on-primary-container uppercase tracking-widest font-bold">Price Guarantee</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-6 rounded-lg border border-white/10">
+<p class="text-secondary font-headline text-3xl font-extrabold mb-1">0</p>
+<p class="text-[10px] text-on-primary-container uppercase tracking-widest font-bold">Timeline Delays</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Chips -->
+<section class="max-w-7xl mx-auto px-8 pb-20">
+<div class="flex flex-wrap justify-center gap-6">
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-full border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-manrope text-sm font-bold text-primary">Master Craftsmanship</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-full border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="font-manrope text-sm font-bold text-primary">Data-Driven Design</span>
+</div>
+<div class="flex items-center gap-3 px-6 py-4 bg-surface-container-lowest rounded-full border border-outline-variant/10 shadow-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-manrope text-sm font-bold text-primary">Structural Integrity</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-[#0B2950] dark:text-white font-headline mb-2">SPACE SOLUTIONS</div>
+<p class="font-manrope text-sm text-slate-500">© 2026 SPACE SOLUTIONS OF FLORIDA INC. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-manrope text-sm text-slate-500">
+<a class="text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Contact Us</a>
+<a class="text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Site Map</a>
+<a class="text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const menuClose = document.getElementById('mobile-menu-close');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  const menuPanel = document.getElementById('mobile-menu-panel');
+  const toggleMobileMenu = (open) => {
+    if (!menuOverlay || !menuPanel) return;
+    menuOverlay.classList.toggle('opacity-0', !open);
+    menuOverlay.classList.toggle('pointer-events-none', !open);
+    menuPanel.classList.toggle('-translate-x-full', !open);
+    menuPanel.classList.toggle('translate-x-0', open);
+  };
+  menuButton?.addEventListener('click', () => toggleMobileMenu(true));
+  menuClose?.addEventListener('click', () => toggleMobileMenu(false));
+  menuOverlay?.addEventListener('click', () => toggleMobileMenu(false));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') toggleMobileMenu(false);
+  });
+</script>
+</body></html>

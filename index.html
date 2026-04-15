@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SPACE SOLUTIONS | Florida's Premier Remodeling</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-surface": "#191c1e",
+                "on-error-container": "#93000a",
+                "secondary-container": "#75a1ff",
+                "surface-dim": "#d8dadc",
+                "on-secondary-fixed-variant": "#004398",
+                "on-primary-fixed-variant": "#2e476f",
+                "surface-bright": "#f7f9fb",
+                "outline": "#74777f",
+                "on-primary": "#ffffff",
+                "secondary": "#285bb4",
+                "surface-tint": "#465f89",
+                "on-tertiary-fixed": "#301400",
+                "on-tertiary-fixed-variant": "#693b18",
+                "primary-fixed": "#d6e3ff",
+                "tertiary-container": "#451f00",
+                "on-secondary-fixed": "#001943",
+                "surface-container-lowest": "#ffffff",
+                "on-primary-container": "#7891be",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "on-surface-variant": "#44474e",
+                "surface-container-high": "#e6e8ea",
+                "tertiary-fixed-dim": "#fbb88a",
+                "on-secondary": "#ffffff",
+                "surface-container": "#eceef0",
+                "surface-variant": "#e0e3e5",
+                "on-secondary-container": "#00367e",
+                "surface-container-low": "#f2f4f6",
+                "on-background": "#191c1e",
+                "background": "#f7f9fb",
+                "inverse-primary": "#aec7f7",
+                "secondary-fixed": "#d9e2ff",
+                "inverse-on-surface": "#eff1f3",
+                "tertiary-fixed": "#ffdcc6",
+                "error": "#ba1a1a",
+                "outline-variant": "#c4c6cf",
+                "on-tertiary-container": "#be835a",
+                "surface": "#f7f9fb",
+                "primary": "#001431",
+                "inverse-surface": "#2d3133",
+                "primary-fixed-dim": "#aec7f7",
+                "tertiary": "#260e00",
+                "primary-container": "#0b2950",
+                "surface-container-highest": "#e0e3e5",
+                "on-primary-fixed": "#001b3d",
+                "secondary-fixed-dim": "#afc6ff"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background-color: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
+                SPACE SOLUTIONS
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="process">Process</a>
+</div>
+<div class="flex items-center gap-4">
+<button id="mobile-menu-button" type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-slate-100/90 text-slate-900 shadow-sm hover:bg-slate-200 transition focus:outline-none">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                    <span class="sr-only">Open menu</span>
+                </button>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about.html">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services.html">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="process.html">Process</a>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-md font-headline font-semibold text-sm transition-transform active:scale-95 hover:opacity-90">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</nav>
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-950/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+<aside id="mobile-menu-panel" class="fixed top-0 left-0 h-full w-[85vw] max-w-xs bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-100 shadow-2xl border-r border-slate-200/80 dark:border-slate-800 transform -translate-x-full transition-transform duration-300 z-50">
+<div class="flex items-center justify-between px-6 py-5 border-b border-slate-200/70 dark:border-slate-800">
+<span class="font-headline font-bold text-lg uppercase text-primary dark:text-white">Menu</span>
+<button id="mobile-menu-close" type="button" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+<span class="material-symbols-outlined text-2xl">close</span>
+<span class="sr-only">Close menu</span>
+</button>
+</div>
+<div class="px-6 py-6 space-y-4">
+<a href="index.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Home</a>
+<a href="about.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">About Us</a>
+<a href="services.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Services</a>
+<a href="process.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Process</a>
+</div>
+<div class="px-6 mt-auto pb-6">
+<button class="w-full bg-primary text-on-primary py-3 rounded-md font-semibold text-sm hover:opacity-90 transition">Get a Quote</button>
+</div>
+</aside>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Interior Remodel" class="w-full h-full object-cover grayscale-[0.2]" data-alt="luxury modern kitchen with navy blue cabinetry and white marble countertops under soft warm natural lighting with professional architectural photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9XWxnpuWsUpMdrGLOAAWxTShYfRA7R4kas8wt4eYrwkrKC2qBpscmq0KElwLXcDVQQEID0J2-AU9LrUnAsprWGwj8f3i-awx40fXmDH6w6nIMRjjUAuWjjWKv9azKBnYbD2pRg5Fd8QFR4rzuJ-UI-fDai9CZOUiJnHtC3_fI4W5dAEXyOgUzXlqNAbsvWQcsH_sOjC1txzaTxnyCrPL8ii7DmMPLUnqnlirjKJ4NcinNnyr0iACyEq0NlGli-gl2ONMvxVsuUvw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-tight">
+                    High-quality space remodeling. <br/>
+<span class="text-secondary">Everything in one place.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl">
+                    Making remodeling an efficient, sustainable, and higher quality process by taking care of all responsibilities.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-headline font-bold text-base transition-all hover:rounded-lg shadow-lg hover:brightness-110 active:scale-95">
+                        Get a Quote
+                    </button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-md font-headline font-bold text-base transition-all hover:rounded-lg border border-outline-variant/15 hover:bg-surface-container-highest active:scale-95">
+                        Learn More
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- About Us Section -->
+<section class="py-24 md:py-32 bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-10">
+<div class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-xs font-bold tracking-widest uppercase">
+                        Our Legacy
+                    </div>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">
+                        Architecture in Harmony
+                    </h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                            We have been providing quality remodeling services to Floridians for the past several years. We focus on involving the client in a construction culture, maintaining a perfect harmony between remodeling, design, cost, and functionality.
+                        </p>
+<p>
+                            Our experience responds to the highest demands of the market—prioritizing meticulous cleanliness, strict delivery times, and optimized costs without compromising the architectural integrity of your space.
+                        </p>
+</div>
+<div class="flex gap-8 border-l-2 border-secondary-container pl-8 py-2">
+<div>
+<div class="text-3xl font-headline font-extrabold text-primary">100%</div>
+<div class="text-sm font-label text-outline uppercase tracking-wider">Satisfaction</div>
+</div>
+<div>
+<div class="text-3xl font-headline font-extrabold text-primary">Years</div>
+<div class="text-sm font-label text-outline uppercase tracking-wider">Of Expertise</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl">
+<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAemqdBYScMKupVaqNlIb3EiNC42FKz1ZXgWhl1Q3swNDaXuM6LoQ3j19xdEDCIFIMe4-7CRJzZbRxFVvWTdtbDEzhNSatdfMehIRlbsgzrFBxrxIWps59BWBxm_fONj0wwZIiOH4KagSOzfyM6_KEWl-PPTVX0pCh257CtXOj1bG6U9o6iPq7FCVNEduvTFSg574PJtxS9cVT7LuXtScJA-i7jmrtssZoGWrUktwfqgcfx9XI4zm_xrwqOLd1nFvIdS6HsLQkGP8"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-8 bg-primary text-on-primary rounded-md hidden md:block max-w-xs shadow-xl">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<p class="font-headline font-bold text-lg leading-snug">Elite Craftsmanship for Florida's most demanding spaces.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Benefits Section (Bento Grid Style) -->
+<section class="py-24 md:py-32 bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Precision at Every Step</h2>
+<p class="text-on-surface-variant text-lg">We eliminate uncertainty through rigid structural methodology and transparent communication.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Main Benefit Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between group transition-all hover:shadow-xl border border-outline-variant/10">
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-primary">Eliminating uncertainty in Cost and Time</h3>
+<p class="text-on-surface-variant text-lg max-w-xl">All budgets are based on broken-down concepts and backed by a contract that guarantees the execution period of all works. No hidden fees, no delays.</p>
+</div>
+<div class="mt-12 flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-secondary-container/10 text-on-secondary-container text-xs font-bold rounded-full uppercase tracking-widest">Fixed Pricing</span>
+<span class="px-4 py-2 bg-secondary-container/10 text-on-secondary-container text-xs font-bold rounded-full uppercase tracking-widest">Guaranteed Timeline</span>
+<span class="px-4 py-2 bg-secondary-container/10 text-on-secondary-container text-xs font-bold rounded-full uppercase tracking-widest">Full Transparency</span>
+</div>
+</div>
+<!-- Secondary Benefit Card -->
+<div class="md:col-span-4 bg-primary p-10 rounded-xl text-on-primary flex flex-col justify-center items-center text-center space-y-6 group overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent opacity-50"></div>
+<span class="material-symbols-outlined text-6xl text-secondary-container" style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
+<h3 class="font-headline text-2xl font-bold relative z-10">Pristine Execution</h3>
+<p class="text-on-primary/80 relative z-10">We treat your home like a sanctuary, maintaining superior cleanliness standards throughout the build.</p>
+</div>
+<!-- Third Card -->
+<div class="md:col-span-6 bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 hover:shadow-xl transition-all flex gap-8 items-start">
+<span class="material-symbols-outlined text-4xl text-secondary">verified_user</span>
+<div class="space-y-4">
+<h3 class="font-headline text-xl font-bold text-primary">Contractual Guarantee</h3>
+<p class="text-on-surface-variant">Every project is legally bound to strict timelines and quality standards, giving you complete peace of mind.</p>
+</div>
+</div>
+<!-- Fourth Card -->
+<div class="md:col-span-6 bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 hover:shadow-xl transition-all flex gap-8 items-start">
+<span class="material-symbols-outlined text-4xl text-secondary">handyman</span>
+<div class="space-y-4">
+<h3 class="font-headline text-xl font-bold text-primary">Master Craftsmanship</h3>
+<p class="text-on-surface-variant">Our builders are vetted experts dedicated to structural integrity and high-end aesthetic finishes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work Section -->
+<section class="py-24 md:py-32 bg-surface" id="process">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl space-y-4">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Our Blueprint for Success</h2>
+<p class="text-on-surface-variant text-lg">Any budget for remodeling facilities should be based on a solid project or preliminary project to guarantee success.</p>
+</div>
+<div class="pb-1">
+<a class="text-secondary font-headline font-bold flex items-center gap-2 group" href="#">
+                        View Project Portfolio
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Vertical Progress Stepper Mimicry -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 -translate-y-1/2 hidden md:block"></div>
+<div class="relative bg-surface p-6 z-10">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-headline font-extrabold text-xl mb-8 relative">
+                        01
+                        <div class="absolute -bottom-2 -right-2 w-full h-full border border-secondary -z-10"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Consultation</h3>
+<p class="text-on-surface-variant leading-relaxed">We analyze your space and your vision, identifying functional requirements and aesthetic goals.</p>
+</div>
+<div class="relative bg-surface p-6 z-10">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center font-headline font-extrabold text-xl mb-8 relative">
+                        02
+                        <div class="absolute -bottom-2 -right-2 w-full h-full border border-secondary -z-10"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Drafting &amp; Design</h3>
+<p class="text-on-surface-variant leading-relaxed">Developing the preliminary project that serves as the technical foundation for all budget estimations.</p>
+</div>
+<div class="relative bg-surface p-6 z-10">
+<div class="w-12 h-12 bg-secondary text-on-primary flex items-center justify-center font-headline font-extrabold text-xl mb-8 relative">
+                        03
+                        <div class="absolute -bottom-2 -right-2 w-full h-full border border-primary -z-10"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Execution</h3>
+<p class="text-on-surface-variant leading-relaxed">Full-scale construction managed by professionals who respect your timeline, budget, and home environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-highest rounded-2xl p-12 md:p-20 overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container opacity-5 -skew-x-12 translate-x-1/2"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="font-headline text-4xl font-extrabold text-primary tracking-tight">Ready to transform your Florida space?</h2>
+<p class="text-on-surface-variant text-lg">Involve yourself in a culture of construction excellence. Let's build your vision together.</p>
+</div>
+<div class="flex md:justify-end">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-headline font-bold text-lg shadow-2xl transition-all hover:-translate-y-1 hover:shadow-primary/20">
+                            Start Your Quote
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8">
+<div class="space-y-4 text-center md:text-left">
+<div class="text-lg font-bold text-[#0B2950] dark:text-white font-headline">SPACE SOLUTIONS</div>
+<p class="font-manrope text-sm text-slate-500 max-w-xs">Premium space remodeling services focusing on harmony between design, cost, and functionality.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Contact Us</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Site Map</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] transition-colors hover:underline" href="#">Terms of Service</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-manrope text-sm text-slate-500">© 2026 SPACE SOLUTIONS OF FLORIDA INC. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const menuClose = document.getElementById('mobile-menu-close');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  const menuPanel = document.getElementById('mobile-menu-panel');
+  const toggleMobileMenu = (open) => {
+    if (!menuOverlay || !menuPanel) return;
+    menuOverlay.classList.toggle('opacity-0', !open);
+    menuOverlay.classList.toggle('pointer-events-none', !open);
+    menuPanel.classList.toggle('-translate-x-full', !open);
+    menuPanel.classList.toggle('translate-x-0', open);
+  };
+  menuButton?.addEventListener('click', () => toggleMobileMenu(true));
+  menuClose?.addEventListener('click', () => toggleMobileMenu(false));
+  menuOverlay?.addEventListener('click', () => toggleMobileMenu(false));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') toggleMobileMenu(false);
+  });
+</script>
+</body></html>

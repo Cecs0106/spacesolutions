@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | SPACE SOLUTIONS OF FLORIDA INC.</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#74777f",
+              "on-surface-variant": "#44474e",
+              "surface-container-high": "#e6e8ea",
+              "surface-container-low": "#f2f4f6",
+              "inverse-on-surface": "#eff1f3",
+              "surface-dim": "#d8dadc",
+              "on-background": "#191c1e",
+              "primary": "#001431",
+              "on-primary-fixed": "#001b3d",
+              "primary-fixed-dim": "#aec7f7",
+              "on-surface": "#191c1e",
+              "on-secondary": "#ffffff",
+              "surface-tint": "#465f89",
+              "error": "#ba1a1a",
+              "background": "#f7f9fb",
+              "tertiary-container": "#451f00",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#00367e",
+              "on-tertiary-fixed-variant": "#693b18",
+              "tertiary-fixed-dim": "#fbb88a",
+              "secondary-fixed": "#d9e2ff",
+              "on-secondary-fixed-variant": "#004398",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#afc6ff",
+              "outline-variant": "#c4c6cf",
+              "on-primary": "#ffffff",
+              "surface-container": "#eceef0",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffdcc6",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "on-tertiary-container": "#be835a",
+              "on-secondary-fixed": "#001943",
+              "surface-bright": "#f7f9fb",
+              "inverse-surface": "#2d3133",
+              "surface": "#f7f9fb",
+              "on-primary-container": "#7891be",
+              "on-error": "#ffffff",
+              "primary-container": "#0b2950",
+              "on-tertiary-fixed": "#301400",
+              "secondary-container": "#75a1ff",
+              "secondary": "#285bb4",
+              "inverse-primary": "#aec7f7",
+              "surface-container-highest": "#e0e3e5",
+              "primary-fixed": "#d6e3ff",
+              "tertiary": "#260e00",
+              "on-primary-fixed-variant": "#2e476f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase">SPACE SOLUTIONS</span>
+<button id="mobile-menu-button" type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-slate-100/90 text-slate-900 shadow-sm hover:bg-slate-200 transition focus:outline-none">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+                <span class="sr-only">Open menu</span>
+            </button>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="about.html">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="services.html">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="process.html">Process</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-manrope text-sm font-bold hover:opacity-80 transition-all duration-300 active:scale-95">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-950/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+<aside id="mobile-menu-panel" class="fixed top-0 left-0 h-full w-[85vw] max-w-xs bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-100 shadow-2xl border-r border-slate-200/80 dark:border-slate-800 transform -translate-x-full transition-transform duration-300 z-50">
+<div class="flex items-center justify-between px-6 py-5 border-b border-slate-200/70 dark:border-slate-800">
+<span class="font-headline font-bold text-lg uppercase text-primary dark:text-white">Menu</span>
+<button id="mobile-menu-close" type="button" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+<span class="material-symbols-outlined text-2xl">close</span>
+<span class="sr-only">Close menu</span>
+</button>
+</div>
+<div class="px-6 py-6 space-y-4">
+<a href="index.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Home</a>
+<a href="about.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">About Us</a>
+<a href="services.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Services</a>
+<a href="process.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Process</a>
+</div>
+<div class="px-6 mt-auto pb-6">
+<button class="w-full bg-primary text-on-primary py-3 rounded-md font-semibold text-sm hover:opacity-90 transition">Get a Quote</button>
+</div>
+</aside>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="editorial-grid gap-8 items-end">
+<div class="col-span-12 lg:col-span-7">
+<h1 class="font-headline text-6xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                        Architectural Precision. <br/>
+<span class="text-secondary">Limitless Possibility.</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-xl leading-relaxed">
+                        We transform environments through master craftsmanship and structural integrity. Our comprehensive suite of services ensures your vision is executed with surgical precision.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-5 hidden lg:block">
+<div class="h-40 bg-surface-container-low flex items-center justify-center rounded-lg p-8">
+<p class="font-headline font-bold text-primary-container text-2xl text-right">
+                            Everything In One Place. <br/>
+<span class="text-sm font-body font-normal text-on-surface-variant opacity-70">The Total Project Lifecycle</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Featured Card: Residential -->
+<div class="md:col-span-2 group relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700" data-alt="ultra-modern luxury kitchen with navy blue cabinetry marble waterfall island and warm architectural lighting professional photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_y_CRQW_5AEcKet2dLJu77zPndub0iKgWX6WotOdX2dcHbcvP8Kl2IQklYaOIbH0bMyWD7jdEibHR-YjjsicZI_s2_Wtj9XZAag72ez9zocn0YYdnr2DWxfZxOP4CJtVtNKBtgzEhVOQA2ngNmEAW011Mk9VXjKOj-xnPK2eHM1LJ2IE4yl7kAPUzJ4Hs0isS0xs9r-HvIRdyxR8j6wDhoMPU7VVTdl3hXmlyv6v_RRHNJ3deKiQeihaQE3S_p0JnpkHtH224ZjA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end">
+<span class="text-on-primary font-headline font-extrabold text-sm tracking-widest mb-4 uppercase opacity-80">Full-Scale Living</span>
+<h2 class="text-on-primary font-headline text-4xl font-bold mb-4">Residential Remodeling</h2>
+<p class="text-on-primary-container text-lg max-w-md mb-8">Elevating private residences through kitchen transformations, master suite expansions, and luxury basement conversions.</p>
+<div class="flex gap-4">
+<span class="bg-secondary/20 backdrop-blur-md text-on-primary px-4 py-1 text-xs font-semibold rounded-full border border-on-primary/10">Kitchens</span>
+<span class="bg-secondary/20 backdrop-blur-md text-on-primary px-4 py-1 text-xs font-semibold rounded-full border border-on-primary/10">Bathrooms</span>
+<span class="bg-secondary/20 backdrop-blur-md text-on-primary px-4 py-1 text-xs font-semibold rounded-full border border-on-primary/10">Additions</span>
+</div>
+</div>
+</div>
+<!-- Secondary Card: Design Consultation -->
+<div class="group relative overflow-hidden bg-primary-container rounded-xl shadow-sm h-[500px] flex flex-col p-12">
+<div class="mb-auto">
+<span class="material-symbols-outlined text-secondary-container text-5xl mb-6">architecture</span>
+<h2 class="text-on-primary font-headline text-3xl font-bold mb-4">Design Consultation</h2>
+<p class="text-on-primary-container leading-relaxed">Where vision meets viability. Our architectural designers bridge the gap between imagination and blueprint.</p>
+</div>
+<ul class="space-y-4 text-on-primary text-sm font-medium mt-12">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-lg" data-weight="fill">check_circle</span>
+                            3D Spatial Modeling
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-lg" data-weight="fill">check_circle</span>
+                            Material Selection Curating
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-lg" data-weight="fill">check_circle</span>
+                            Feasibility Assessment
+                        </li>
+</ul>
+</div>
+<!-- Commercial Renovations -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-30" data-alt="contemporary glass-walled corporate office interior with sleek dark furniture and minimalist architectural details in blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazfYXmd9NQ2dF0W04TcSkBdIacu9rxJ8qKkp8rwAhhMRFirh8gEi3hcARZncVtcFTREWYIas_X8q0FhNEpPzkCTsPkTxnJ9NGrNOSuRTlR8p19HUn-HVRgqNC2DWwrLwuUyslQ9FiG7aZBecezljwcSyXQpDdIskdXjkBPWOEoVdl3T0ckPknCnZqWReJLOKkEkK1o-ThMWjB4l0tUGMAFYYEL1jaoqk2fGkl6XE-zLCXOUg0HuSpYDuAbE1uSaHCtxI0Vley_Fw"/>
+<div class="relative p-12 h-full flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">business</span>
+<h2 class="text-primary font-headline text-2xl font-bold mb-4">Commercial Renovations</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Optimizing workspace efficiency for medical facilities, retail showrooms, and corporate headquarters across Florida.</p>
+<button class="mt-auto text-primary font-bold text-xs flex items-center gap-2 group-hover:gap-4 transition-all">
+                            VIEW SECTORS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Management -->
+<div class="md:col-span-2 group relative overflow-hidden bg-surface-container-low rounded-xl shadow-sm h-[400px] flex items-center">
+<div class="w-1/2 p-12 relative z-10">
+<h2 class="text-primary font-headline text-3xl font-bold mb-4">Project Management</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">We eliminate the friction of remodeling. One point of contact, zero headache. We manage vendors, permits, and timelines.</p>
+<div class="flex items-center gap-8">
+<div class="text-center">
+<span class="block text-2xl font-headline font-bold text-secondary">100%</span>
+<span class="text-[10px] uppercase tracking-widest text-outline">On-Time Delivery</span>
+</div>
+<div class="w-[1px] h-10 bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="block text-2xl font-headline font-bold text-secondary">0</span>
+<span class="text-[10px] uppercase tracking-widest text-outline">Stress Points</span>
+</div>
+</div>
+</div>
+<div class="w-1/2 h-full relative">
+<div class="absolute inset-0 bg-primary/10 z-10"></div>
+<img class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-[2000ms]" data-alt="architectural technical drawings and blueprints on a wooden table with precision measuring tools and soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWYURgNyN7NZ8byt2WPObZ1-1dHvpSdK3dreJAgjz7J7IH2__5omxCQpQKBm0mMPCqsbcoTIMXuKRFHlVHvr5kQNlHghcD2m9MI_HLpvTdXTnnsghSjLGvCA8QbZe4_lTPO4MvLuBQY52XNMtXz1LA8y4zUXEUpZaPWX8uC7-oirFwcehCCwZz-XxqGZbZ8TYujUu7cTn9M7DW5DZK9ytyYypdI9gF-JNMVHYSpaI2GoEgi7nyFiPhsJXyc3o-AKbSqLQ0qtqTL5M"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Approach Section (Everything in one place) -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center gap-24">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-8 tracking-tight">The "Everything in One Place" Mandate.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+                            Unlike traditional firms that outsource and fragment your project, Space Solutions operates as a unified entity. From the first sketch to the final coat of paint, your vision remains under one expert roof.
+                        </p>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="bg-surface-container-lowest shadow-sm w-16 h-16 shrink-0 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Unified Accountability</h4>
+<p class="text-sm text-on-surface-variant">One company responsible for every nail and every budget detail.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="bg-surface-container-lowest shadow-sm w-16 h-16 shrink-0 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">speed</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Accelerated Timelines</h4>
+<p class="text-sm text-on-surface-variant">Seamless handoffs between design and build phases save weeks of delay.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+<div class="pt-12">
+<img class="w-full h-80 object-cover rounded-lg shadow-xl mb-4" data-alt="close up of premium minimalist bathroom vanity with stone texture and brass fixtures focused lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAI2xHYxEkVuBc5x7LKwlN0YD-u8eMHAS5H-JjtJTKmzkmnRqWFBU2CWEB87Lw7pn9BVJbawdO1wAJPNnwtXgznDIw0GugDMXVFiKLdUEqaMUl0fi6lDLFgR3FKh6bgUZHRgE-IJ03vFUcllY4w2oPUk0qTP57cSuIzkJ6Z6BKwflGFWbR_1N3U9vV6_arMHcVXWE1OdaSwf0VTcTYauE5qcwXpNLkdBS0XkXC2yAnPzHYLV6azv669u53jEjAi1uvdc-jU493A40"/>
+</div>
+<div>
+<img class="w-full h-80 object-cover rounded-lg shadow-xl" data-alt="walk-in closet with custom walnut shelving integrated warm led lighting and high-end organizational layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf4hIxVAvAVdg_c7MK6CJqmpSxG3XGottJQB6b1aD5_pRisKEve5ekL_V2mx3Sd9dQ-o8rTI0XXuyrytOAuSnKd93F7WrPW40cSFMg4Cuwb_BYoWTXOwg6pHqcdFJmGhAKwmsJ68MP7FFloDo9mgqAh-wVMdFFqIzRNkW0dUozppCcF17QhV1hxEUZoFSzWuy6Tzc3ZowTZxA6f9PlPfO5Wmw_uxwdUoNU67X_LeA47IjPt-I3O5PvSs1V6jhDsX5bJ2L3AmBbqaU"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-5xl mx-auto px-8 my-32">
+<div class="bg-primary-container rounded-2xl p-16 relative overflow-hidden text-center">
+<!-- Subtle Gradient Sheen -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/20 via-transparent to-transparent"></div>
+<h2 class="relative z-10 font-headline text-4xl font-bold text-on-primary mb-6">Ready to redefine your space?</h2>
+<p class="relative z-10 text-on-primary-container text-lg max-w-2xl mx-auto mb-10">Our consultation team is standing by to translate your requirements into a structural masterpiece.</p>
+<div class="relative z-10 flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-white text-primary px-10 py-4 rounded-md font-manrope font-extrabold tracking-tight hover:bg-surface-container-high transition-all active:scale-95 shadow-lg shadow-primary/20">
+                        SCHEDULE A CONSULTATION
+                    </button>
+<button class="border border-white/20 text-on-primary px-10 py-4 rounded-md font-manrope font-extrabold tracking-tight hover:bg-white/10 transition-all">
+                        DOWNLOAD BROCHURE
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-bold text-[#0B2950] dark:text-white block mb-2">SPACE SOLUTIONS</span>
+<p class="font-manrope text-sm text-slate-500 max-w-xs leading-relaxed">Defining structural excellence in Florida's most prestigious spaces.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] hover:underline transition-colors" href="#">Contact Us</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] hover:underline transition-colors" href="#">Site Map</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] hover:underline transition-colors" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm text-slate-500 hover:text-[#104CA5] hover:underline transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="px-8 pb-12 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-manrope text-sm text-slate-500">© 2026 SPACE SOLUTIONS OF FLORIDA INC. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-secondary transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-secondary transition-colors">photo_camera</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-secondary transition-colors">business_center</span>
+</div>
+</div>
+</footer>
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const menuClose = document.getElementById('mobile-menu-close');
+  const menuOverlay = document.getElementById('mobile-menu-overlay');
+  const menuPanel = document.getElementById('mobile-menu-panel');
+  const toggleMobileMenu = (open) => {
+    if (!menuOverlay || !menuPanel) return;
+    menuOverlay.classList.toggle('opacity-0', !open);
+    menuOverlay.classList.toggle('pointer-events-none', !open);
+    menuPanel.classList.toggle('-translate-x-full', !open);
+    menuPanel.classList.toggle('translate-x-0', open);
+  };
+  menuButton?.addEventListener('click', () => toggleMobileMenu(true));
+  menuClose?.addEventListener('click', () => toggleMobileMenu(false));
+  menuOverlay?.addEventListener('click', () => toggleMobileMenu(false));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') toggleMobileMenu(false);
+  });
+</script>
+</body></html>
