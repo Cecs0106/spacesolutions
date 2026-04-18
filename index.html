@@ -84,23 +84,16 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
-                SPACE SOLUTIONS
-            </div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about">About Us</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services">Services</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="process">Process</a>
-</div>
+<nav class="relative flex items-center justify-between px-8 py-4 max-w-7xl mx-auto bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50">
 <div class="flex items-center gap-4">
 <button id="mobile-menu-button" type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-slate-100/90 text-slate-900 shadow-sm hover:bg-slate-200 transition focus:outline-none">
                     <span class="material-symbols-outlined text-2xl">menu</span>
                     <span class="sr-only">Open menu</span>
                 </button>
-<div class="hidden md:flex items-center space-x-8">
+<a class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0" href="index.html">SPACE SOLUTIONS</a>
+</div>
+<div class="hidden md:flex items-center justify-end gap-8">
+<div class="flex items-center gap-8">
 <a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
 <a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about.html">About Us</a>
 <a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services.html">Services</a>
@@ -109,7 +102,6 @@
 <button class="bg-primary text-on-primary px-5 py-2.5 rounded-md font-headline font-semibold text-sm transition-transform active:scale-95 hover:opacity-90">
                     Get a Quote
                 </button>
-</div>
 </div>
 </nav>
 <div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-950/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
