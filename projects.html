@@ -83,20 +83,34 @@
 </head>
 <body class="bg-surface font-body text-on-surface">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
-                SPACE SOLUTIONS
-            </div>
+<nav class="relative fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="relative flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded-md border border-slate-200 bg-white text-primary shadow-sm hover:bg-slate-50 transition focus:outline-none focus:ring-2 focus:ring-primary/30">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <div class="hidden md:flex items-center gap-8 font-manrope text-sm font-semibold tracking-tight">
 <a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="index.html">Home</a>
 <a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="about.html">About Us</a>
 <a class="text-slate-600 dark:text-slate-300 hover:text-[#0B2950] transition-all duration-300" href="services.html">Services</a>
 <a class="text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="projects.html">Projects</a>
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-80 transition-all active:scale-95">
-                Get a Quote
-            </button>
+</div>
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base md:text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline w-full max-w-[240px] text-center truncate">
+                SPACE SOLUTIONS
+            </div>
+<a href="#quote" class="hidden md:inline-flex bg-primary text-on-primary px-5 py-2.5 rounded-md font-headline font-semibold text-sm transition-transform active:scale-95 hover:opacity-90 items-center justify-center">
+                    Get a Quote
+                </a>
+</div>
+<div id="mobile-menu" class="md:hidden hidden px-8 pb-4 bg-slate-50/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-3 pt-2">
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="about.html">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="services.html">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="projects.html">Projects</a>
+<a href="#quote" class="inline-flex items-center justify-center rounded-md bg-primary text-on-primary px-4 py-3 font-headline font-semibold text-sm">Get a Quote</a>
+</div>
 </div>
 </nav>
 <main class="pt-24 pb-20">
@@ -444,4 +458,12 @@
 </div>
 </div>
 </footer>
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle?.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('hidden') === false;
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>
 </body></html>
