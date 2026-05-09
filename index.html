@@ -84,45 +84,24 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar -->
-<nav class="relative flex items-center justify-between px-8 py-4 max-w-7xl mx-auto bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50">
-<div class="flex items-center gap-4">
-<button id="mobile-menu-button" type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg bg-slate-100/90 text-slate-900 shadow-sm hover:bg-slate-200 transition focus:outline-none">
-                    <span class="material-symbols-outlined text-2xl">menu</span>
-                    <span class="sr-only">Open menu</span>
-                </button>
-<a class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0" href="index.html">SPACE SOLUTIONS</a>
-</div>
-<div class="hidden md:flex items-center justify-end gap-8">
-<div class="flex items-center gap-8">
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
+                SPACE SOLUTIONS
+            </div>
+<div class="hidden md:flex items-center space-x-8">
 <a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
 <a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about.html">About Us</a>
 <a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services.html">Services</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="process.html">Process</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="projects.html">Projects</a>
 </div>
+<div class="flex items-center gap-4">
 <button class="bg-primary text-on-primary px-5 py-2.5 rounded-md font-headline font-semibold text-sm transition-transform active:scale-95 hover:opacity-90">
                     Get a Quote
                 </button>
 </div>
+</div>
 </nav>
-<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-950/40 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
-<aside id="mobile-menu-panel" class="fixed top-0 left-0 h-full w-[85vw] max-w-xs bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-100 shadow-2xl border-r border-slate-200/80 dark:border-slate-800 transform -translate-x-full transition-transform duration-300 z-50">
-<div class="flex items-center justify-between px-6 py-5 border-b border-slate-200/70 dark:border-slate-800">
-<span class="font-headline font-bold text-lg uppercase text-primary dark:text-white">Menu</span>
-<button id="mobile-menu-close" type="button" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition">
-<span class="material-symbols-outlined text-2xl">close</span>
-<span class="sr-only">Close menu</span>
-</button>
-</div>
-<div class="px-6 py-6 space-y-4">
-<a href="index.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Home</a>
-<a href="about.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">About Us</a>
-<a href="services.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Services</a>
-<a href="process.html" class="block text-sm font-semibold text-slate-700 dark:text-slate-100 hover:text-primary transition">Process</a>
-</div>
-<div class="px-6 mt-auto pb-6">
-<button class="w-full bg-primary text-on-primary py-3 rounded-md font-semibold text-sm hover:opacity-90 transition">Get a Quote</button>
-</div>
-</aside>
 <!-- Hero Section -->
 <header class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -158,14 +137,14 @@
                         Our Legacy
                     </div>
 <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">
-                        Architecture in Harmony
+                        About Us
                     </h2>
 <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
 <p>
-                            We have been providing quality remodeling services to Floridians for the past several years. We focus on involving the client in a construction culture, maintaining a perfect harmony between remodeling, design, cost, and functionality.
+                            <h3><b>Our mission</b></h3> is to be a strategic partner in the development of business projects, managing, integrating and driving the success of our clients through unwavering excellence, combining multiple services in a single company, and adapting to the changing demands of the market.
                         </p>
 <p>
-                            Our experience responds to the highest demands of the market—prioritizing meticulous cleanliness, strict delivery times, and optimized costs without compromising the architectural integrity of your space.
+                            <h3><b>Our Vision</b></h3> is to be the leading commercial project management firm throughout Florida, redefining the standards of excellence and innovating in every process, and generating a lasting impact on the companies that trust us, becoming their strategic growth partner.
                         </p>
 </div>
 <div class="flex gap-8 border-l-2 border-secondary-container pl-8 py-2">
@@ -174,14 +153,14 @@
 <div class="text-sm font-label text-outline uppercase tracking-wider">Satisfaction</div>
 </div>
 <div>
-<div class="text-3xl font-headline font-extrabold text-primary">Years</div>
+<div class="text-3xl font-headline font-extrabold text-primary">5 Years</div>
 <div class="text-sm font-label text-outline uppercase tracking-wider">Of Expertise</div>
 </div>
 </div>
 </div>
 <div class="relative">
 <div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl">
-<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAemqdBYScMKupVaqNlIb3EiNC42FKz1ZXgWhl1Q3swNDaXuM6LoQ3j19xdEDCIFIMe4-7CRJzZbRxFVvWTdtbDEzhNSatdfMehIRlbsgzrFBxrxIWps59BWBxm_fONj0wwZIiOH4KagSOzfyM6_KEWl-PPTVX0pCh257CtXOj1bG6U9o6iPq7FCVNEduvTFSg574PJtxS9cVT7LuXtScJA-i7jmrtssZoGWrUktwfqgcfx9XI4zm_xrwqOLd1nFvIdS6HsLQkGP8"/>
+<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="img/home/aboutUs-home.jpg"/>
 </div>
 <div class="absolute -bottom-8 -left-8 p-8 bg-primary text-on-primary rounded-md hidden md:block max-w-xs shadow-xl">
 <span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
@@ -190,6 +169,118 @@
 </div>
 </div>
 </div>
+</section>
+<!-- Marquee -->
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #666666;
+            --animation-speed: 30s;
+            --logo-width: 128px; /* Ajusta según el tamaño de tus logos */
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: var(--bg-color);
+        }
+
+        /* Contenedor del marquee sin afectar los márgenes del layout principal */
+        .marquee-section {
+            overflow: hidden;
+        }
+
+        .marquee-title {
+            color: inherit;
+            font-size: 2.75rem;
+            margin-bottom: 0.75rem;
+            text-transform: none;
+            letter-spacing: 0.01em;
+        }
+        .marquee-subtitle {
+            color: #6b7280;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* El contenedor del "camino" de los logos */
+        .marquee-container {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            animation: scroll 28s linear infinite;
+        }
+
+        /* Estilo de cada logo */
+        .logo-item {
+            width: 160px;
+            margin: 0 40px; /* Espaciado entre logos */
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-item img {
+            max-width: 100%;
+            height: auto;
+            /* Filtro para que se vean grises/oscuros como en la imagen */
+            /* filter: grayscale(1) opacity(0.7); */
+            transition: filter 0.3s ease;
+        }
+
+        .logo-item img:hover {
+            filter: grayscale(0) opacity(1);
+        }
+
+        /* Animación para el bucle infinito sin saltos */
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); } /* Se mueve exactamente la mitad */
+        }
+
+        /* Pausar al pasar el mouse (opcional) */
+        .marquee-section:hover .marquee-container {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+
+<section class="marquee-section bg-surface py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="marquee-title font-headline font-extrabold text-primary tracking-tight">Our Clients</h2>
+            <p class="marquee-subtitle text-on-surface-variant">We collaborate with leading organizations across Florida on commercial remodeling projects, bringing reliability, precision, and standout results.</p>
+        </div>
+        <div class="overflow-hidden">
+            <div class="marquee-container flex items-center gap-10 whitespace-nowrap py-6">
+                <!-- PRIMER GRUPO DE 9 LOGOS -->
+                <div class="logo-item"><img src="img/logos/logo1.png" alt="Logo 1"></div>
+                <div class="logo-item"><img src="img/logos/logo2.png" alt="Logo 2"></div>
+                <div class="logo-item"><img src="img/logos/logo3.png" alt="Logo 3"></div>
+                <div class="logo-item"><img src="img/logos/logo4.png" alt="Logo 4"></div>
+                <div class="logo-item"><img src="img/logos/logo5.png" alt="Logo 5"></div>
+                <div class="logo-item"><img src="img/logos/logo6.png" alt="Logo 6"></div>
+                <div class="logo-item"><img src="img/logos/logo7.png" alt="Logo 7"></div>
+                <div class="logo-item"><img src="img/logos/logo8.png" alt="Logo 8"></div>
+                <div class="logo-item"><img src="img/logos/logo9.png" alt="Logo 9"></div>
+
+                <!-- SEGUNDO GRUPO (Duplicado idéntico para el bucle infinito) -->
+                <div class="logo-item"><img src="img/logos/logo1.png" alt="Logo 1"></div>
+                <div class="logo-item"><img src="img/logos/logo2.png" alt="Logo 2"></div>
+                <div class="logo-item"><img src="img/logos/logo3.png" alt="Logo 3"></div>
+                <div class="logo-item"><img src="img/logos/logo4.png" alt="Logo 4"></div>
+                <div class="logo-item"><img src="img/logos/logo5.png" alt="Logo 5"></div>
+                <div class="logo-item"><img src="img/logos/logo6.png" alt="Logo 6"></div>
+                <div class="logo-item"><img src="img/logos/logo7.png" alt="Logo 7"></div>
+                <div class="logo-item"><img src="img/logos/logo8.png" alt="Logo 8"></div>
+                <div class="logo-item"><img src="img/logos/logo9.png" alt="Logo 9"></div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Core Benefits Section (Bento Grid Style) -->
 <section class="py-24 md:py-32 bg-surface-container-low" id="services">
@@ -295,11 +386,13 @@
 <h2 class="font-headline text-4xl font-extrabold text-primary tracking-tight">Ready to transform your Florida space?</h2>
 <p class="text-on-surface-variant text-lg">Involve yourself in a culture of construction excellence. Let's build your vision together.</p>
 </div>
-<div class="flex md:justify-end">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-headline font-bold text-lg shadow-2xl transition-all hover:-translate-y-1 hover:shadow-primary/20">
-                            Start Your Quote
+<form action="#" method="post" class="space-y-4 w-full max-w-sm md:ml-auto">
+<input type="tel" name="phone" placeholder="Phone" class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-on-surface outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" />
+<input type="email" name="email" placeholder="Email" class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-on-surface outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" />
+<button type="submit" class="w-full bg-primary text-on-primary px-6 py-4 rounded-md font-headline font-bold text-lg shadow-2xl transition-all hover:-translate-y-1 hover:shadow-primary/20">
+                            Send
                         </button>
-</div>
+</form>
 </div>
 </div>
 </div>
@@ -322,23 +415,4 @@
 </div>
 </div>
 </footer>
-<script>
-  const menuButton = document.getElementById('mobile-menu-button');
-  const menuClose = document.getElementById('mobile-menu-close');
-  const menuOverlay = document.getElementById('mobile-menu-overlay');
-  const menuPanel = document.getElementById('mobile-menu-panel');
-  const toggleMobileMenu = (open) => {
-    if (!menuOverlay || !menuPanel) return;
-    menuOverlay.classList.toggle('opacity-0', !open);
-    menuOverlay.classList.toggle('pointer-events-none', !open);
-    menuPanel.classList.toggle('-translate-x-full', !open);
-    menuPanel.classList.toggle('translate-x-0', open);
-  };
-  menuButton?.addEventListener('click', () => toggleMobileMenu(true));
-  menuClose?.addEventListener('click', () => toggleMobileMenu(false));
-  menuOverlay?.addEventListener('click', () => toggleMobileMenu(false));
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') toggleMobileMenu(false);
-  });
-</script>
 </body></html>
