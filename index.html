@@ -122,13 +122,36 @@
 </div>
 <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
 <div class="max-w-2xl space-y-8">
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-tight">
-                    High-quality space remodeling. <br/>
-<span class="text-secondary">Everything in one place.</span>
+<h1 class="font-headline text-5xl md:text-[4rem] font-extrabold text-primary tracking-tighter leading-tight">
+                    The future is not waited for. It is created. <br/>
+<span class="text-secondary">Building with efficiency and solidity</span>
 </h1>
-<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl">
-                    Making remodeling an efficient, sustainable, and higher quality process by taking care of all responsibilities.
-                </p>
+        <p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl">
+            <span>Space Solutions of Florida Inc. is a construction company based in Miami, Florida. For years,</span>
+            
+            <span id="more-text" class="hidden"> we have distinguished ourselves by providing a diverse range of services to our clients, all from a single office and held to the highest standards. It is for this reason, along with the ease and convenience we offer during project execution, that our clients prefer to work with our team.</span>
+            
+            <button id="toggle-btn" class="text-blue-600 font-semibold hover:underline focus:outline-none inline-block ml-1">
+                See more
+            </button>
+        </p>
+
+        <script>
+            const toggleBtn = document.getElementById('toggle-btn');
+            const moreText = document.getElementById('more-text');
+
+            toggleBtn.addEventListener('click', () => {
+                // Alterna la clase 'hidden' en el texto restante
+                moreText.classList.toggle('hidden');
+                
+                // Cambia el texto del botón según el estado
+                if (moreText.classList.contains('hidden')) {
+                    toggleBtn.textContent = 'See more';
+                } else {
+                    toggleBtn.textContent = 'See less';
+                }
+            });
+        </script>
 <div class="flex flex-wrap gap-4 pt-4">
 <a href="#quote" class="bg-primary text-on-primary px-8 py-4 rounded-md font-headline font-bold text-base transition-all hover:rounded-lg shadow-lg hover:brightness-110 active:scale-95 inline-flex items-center justify-center">
                         Get a Quote
@@ -153,10 +176,10 @@
                     </h2>
 <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
 <p>
-                            <h3><b>Our mission</b></h3> is to be a strategic partner in the development of business projects, managing, integrating and driving the success of our clients through unwavering excellence, combining multiple services in a single company, and adapting to the changing demands of the market.
+                            <h3><b>Our mission</b></h3> Is to be a strategic partner in the development of business projects, managing, integrating and driving the success of our clients through unwavering excellence, combining multiple services in a single company, and adapting to the changing demands of the market.
                         </p>
 <p>
-                            <h3><b>Our Vision</b></h3> is to be the leading commercial project management firm throughout Florida, redefining the standards of excellence and innovating in every process, and generating a lasting impact on the companies that trust us, becoming their strategic growth partner.
+                            <h3><b>Our Vision</b></h3> Is to be the leading commercial project management firm throughout Florida, redefining the standards of excellence and innovating in every process, and generating a lasting impact on the companies that trust us, becoming their strategic growth partner.
                         </p>
 </div>
 <div class="flex gap-8 border-l-2 border-secondary-container pl-8 py-2">
@@ -172,7 +195,7 @@
 </div>
 <div class="relative">
 <div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl">
-<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="img/home/aboutUs-home.jpg"/>
+<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="#"/>
 </div>
 <div class="absolute -bottom-8 -left-8 p-8 bg-primary text-on-primary rounded-md hidden md:block max-w-xs shadow-xl">
 <span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
