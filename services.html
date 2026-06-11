@@ -85,6 +85,10 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
         }
+
+        .centrado-ourservices {
+            padding-top: 3rem;
+        }
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
@@ -267,11 +271,11 @@
 
 <!-- Section chatgpt -->
 <section class="bg-surface py-12 md:py-16">
-  <div class="max-w-[75rem] mx-auto px-8 md:px-12 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+  <div class="max-w-[75rem] mx-auto px-8 md:px-6 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
     <!-- OUR SERVICES -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
       <!-- Left Column: Header + Values -->
-      <div class="lg:col-span-4 flex flex-col">
+      <div class="lg:col-span-4 flex flex-col centrado-ourservices">
         <p class="text-xs font-bold tracking-widest text-outline uppercase mb-3">Our Services</p>
         <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-3 tracking-tight leading-tight">
           Construction &amp;<br>Project Solutions
@@ -284,7 +288,7 @@
         <!-- Values + Image overlay container -->
         <div class="relative flex-1 w-full min-h-[180px] overflow-hidden rounded-lg">
           <!-- Blurred/Faded Building Image as background -->
-          <img class="absolute inset-0 w-full h-full object-cover object-bottom blur-sm" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Modern building exterior">
+          <!-- <img class="absolute inset-0 w-full h-full object-cover object-bottom blur-sm" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Modern building exterior"> -->
           <!-- Strong white gradient overlay for readability -->
           <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/70 to-white/40"></div>
 
@@ -405,9 +409,10 @@
           <h3 class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-8 tracking-tight">
             A Clear Process.
           </h3>
-          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-0">
+          <div class="flex overflow-x-auto sm:overflow-visible snap-x snap-mandatory gap-4 sm:gap-0 pb-4 sm:pb-0 items-start sm:items-center scrollbar-hide" style="-ms-overflow-style: none; scrollbar-width: none;">
+            <style>.scrollbar-hide::-webkit-scrollbar { display: none; }</style>
             <!-- Step 1 -->
-            <div class="text-center flex-1">
+            <div class="text-center flex-shrink-0 w-[260px] sm:w-auto sm:flex-1 snap-start">
               <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mx-auto mb-3">
                 <span class="material-symbols-outlined text-secondary text-2xl">chat</span>
               </div>
@@ -418,7 +423,7 @@
             <!-- Dotted line 1 -->
             <div class="hidden sm:block w-8 border-t-2 border-dotted border-slate-300 mt-[-60px]"></div>
             <!-- Step 2 -->
-            <div class="text-center flex-1">
+            <div class="text-center flex-shrink-0 w-[260px] sm:w-auto sm:flex-1 snap-start">
               <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mx-auto mb-3">
                 <span class="material-symbols-outlined text-secondary text-2xl">map</span>
               </div>
@@ -429,7 +434,7 @@
             <!-- Dotted line 2 -->
             <div class="hidden sm:block w-8 border-t-2 border-dotted border-slate-300 mt-[-60px]"></div>
             <!-- Step 3 -->
-            <div class="text-center flex-1">
+            <div class="text-center flex-shrink-0 w-[260px] sm:w-auto sm:flex-1 snap-start">
               <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mx-auto mb-3">
                 <span class="material-symbols-outlined text-secondary text-2xl">settings</span>
               </div>
@@ -440,7 +445,7 @@
             <!-- Dotted line 3 -->
             <div class="hidden sm:block w-8 border-t-2 border-dotted border-slate-300 mt-[-60px]"></div>
             <!-- Step 4 -->
-            <div class="text-center flex-1">
+            <div class="text-center flex-shrink-0 w-[260px] sm:w-auto sm:flex-1 snap-start">
               <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mx-auto mb-3">
                 <span class="material-symbols-outlined text-secondary text-2xl">calendar_month</span>
               </div>
@@ -451,7 +456,7 @@
             <!-- Dotted line 4 -->
             <div class="hidden sm:block w-8 border-t-2 border-dotted border-slate-300 mt-[-60px]"></div>
             <!-- Step 5 -->
-            <div class="text-center flex-1">
+            <div class="text-center flex-shrink-0 w-[260px] sm:w-auto sm:flex-1 snap-start">
               <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mx-auto mb-3">
                 <span class="material-symbols-outlined text-secondary text-2xl">check_circle</span>
               </div>
@@ -464,32 +469,26 @@
         <!-- INDUSTRIES WE SERVE -->
         <div class="bg-slate-50 rounded-lg p-6">
           <p class="text-sm font-bold tracking-widest text-outline uppercase mb-6">Industries We Serve</p>
-          <div class="flex flex-col sm:flex-row items-center justify-center sm:divide-x sm:divide-slate-200 gap-4 sm:gap-0">
-            <div class="text-center flex-1 py-2">
+          <div class="flex overflow-x-auto sm:overflow-visible snap-x snap-mandatory gap-4 sm:gap-0 items-center justify-start sm:justify-center sm:divide-x sm:divide-slate-200 pb-4 sm:pb-0 scrollbar-hide" style="-ms-overflow-style: none; scrollbar-width: none;">
+            <div class="text-center flex-shrink-0 w-[200px] sm:w-auto sm:flex-1 py-2 snap-start">
               <div class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto mb-2">
                 <span class="material-symbols-outlined text-primary text-xl">business</span>
               </div>
               <p class="text-xs font-bold text-primary uppercase">Office & Corporate</p>
             </div>
-            <div class="text-center flex-1 py-2">
-              <div class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto mb-2">
-                <span class="material-symbols-outlined text-primary text-xl">storefront</span>
-              </div>
-              <p class="text-xs font-bold text-primary uppercase">Retail & Restaurants</p>
-            </div>
-            <div class="text-center flex-1 py-2">
+            <div class="text-center flex-shrink-0 w-[200px] sm:w-auto sm:flex-1 py-2 snap-start">
               <div class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto mb-2">
                 <span class="material-symbols-outlined text-primary text-xl">local_hospital</span>
               </div>
               <p class="text-xs font-bold text-primary uppercase">Healthcare</p>
             </div>
-            <div class="text-center flex-1 py-2">
+            <div class="text-center flex-shrink-0 w-[200px] sm:w-auto sm:flex-1 py-2 snap-start">
               <div class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto mb-2">
                 <span class="material-symbols-outlined text-primary text-xl">warehouse</span>
               </div>
               <p class="text-xs font-bold text-primary uppercase">Industrial & Warehouse</p>
             </div>
-            <div class="text-center flex-1 py-2">
+            <div class="text-center flex-shrink-0 w-[200px] sm:w-auto sm:flex-1 py-2 snap-start">
               <div class="w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center mx-auto mb-2">
                 <span class="material-symbols-outlined text-primary text-xl">account_balance</span>
               </div>
@@ -502,9 +501,6 @@
   </div>
 </section>
 <!-- fin section chatgpt -->
-
-
-
 
 <!-- CTA Section -->
 <!-- <section class="max-w-5xl mx-auto px-8 my-32">
