@@ -80,25 +80,40 @@
             background-color: rgba(247, 249, 251, 0.8);
             backdrop-filter: blur(12px);
         }
+        .nav-transparent .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-transparent .nav-link:hover {
+            color: rgba(255,255,255,0.9) !important;
+        }
+        .nav-transparent .brand {
+            color: #ffffff !important;
+        }
+        .nav-mobile-link {
+            color: #104CA5 !important;
+        }
+        .nav-mobile-link:hover {
+            color: #0B2950 !important;
+        }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<nav id="top-nav" class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md shadow-sm transition-colors duration-300">
 <div class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
 <div class="flex items-center gap-4">
 <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded-md border border-slate-200 bg-white text-primary shadow-sm hover:bg-slate-50 transition focus:outline-none focus:ring-2 focus:ring-primary/30">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<div class="text-xl font-extrabold tracking-tighter text-[#0B2950] dark:text-white uppercase font-headline">
+<div class="text-xl font-extrabold tracking-tighter brand text-[#0B2950] dark:text-white uppercase font-headline">
                         SPACE SOLUTIONS
                     </div>
 </div>
 <div class="hidden md:flex items-center space-x-8">
-<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about.html">About Us</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services.html">Services</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="projects.html">Projects</a>
+<a class="font-manrope nav-link text-sm font-semibold tracking-tight text-[#104CA5] border-b-2 border-[#104CA5] pb-1 transition-all duration-300" href="index.html">Home</a>
+<a class="font-manrope nav-link text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="about.html">About Us</a>
+<a class="font-manrope nav-link text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="services.html">Services</a>
+<a class="font-manrope nav-link text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#0B2950] hover:opacity-80 transition-all duration-300" href="projects.html">Projects</a>
 </div>
 <a href="#quote" class="hidden md:inline-flex bg-primary text-on-primary px-5 py-2.5 rounded-md font-headline font-semibold text-sm transition-transform active:scale-95 hover:opacity-90 inline-flex items-center justify-center">
                         Get a Quote
@@ -106,10 +121,10 @@
 </div>
 <div id="mobile-menu" class="md:hidden hidden px-8 pb-4 bg-slate-50/95 dark:bg-slate-900/95 border-b border-slate-200 dark:border-slate-800">
 <div class="flex flex-col gap-3 pt-2">
-<a class="font-manrope text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="index.html">Home</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 transition-colors hover:text-[#0B2950]" href="about.html">About Us</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 transition-colors hover:text-[#0B2950]" href="services.html">Services</a>
-<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 dark:text-slate-300 transition-colors hover:text-[#0B2950]" href="projects.html">Projects</a>
+<a class="font-manrope nav-mobile-link text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="index.html">Home</a>
+<a class="font-manrope nav-mobile-link text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="about.html">About Us</a>
+<a class="font-manrope nav-mobile-link text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="services.html">Services</a>
+<a class="font-manrope nav-mobile-link text-sm font-semibold tracking-tight text-[#104CA5] transition-colors hover:text-[#0B2950]" href="projects.html">Projects</a>
 <a href="#quote" class="inline-flex items-center justify-center rounded-md bg-primary text-on-primary px-4 py-3 font-headline font-semibold text-sm">Get a Quote</a>
 </div>
 </div>
@@ -117,16 +132,16 @@
 <!-- Hero Section -->
 <header class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Luxury Interior Remodel" class="w-full h-full object-cover grayscale-[0.2]" data-alt="luxury modern kitchen with navy blue cabinetry and white marble countertops under soft warm natural lighting with professional architectural photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9XWxnpuWsUpMdrGLOAAWxTShYfRA7R4kas8wt4eYrwkrKC2qBpscmq0KElwLXcDVQQEID0J2-AU9LrUnAsprWGwj8f3i-awx40fXmDH6w6nIMRjjUAuWjjWKv9azKBnYbD2pRg5Fd8QFR4rzuJ-UI-fDai9CZOUiJnHtC3_fI4W5dAEXyOgUzXlqNAbsvWQcsH_sOjC1txzaTxnyCrPL8ii7DmMPLUnqnlirjKJ4NcinNnyr0iACyEq0NlGli-gl2ONMvxVsuUvw"/>
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+<img alt="Luxury Interior Remodel" class="w-full h-full object-cover grayscale-[0.2]" data-alt="luxury modern kitchen with navy blue cabinetry and white marble countertops under soft warm natural lighting with professional architectural photography style" src="/img/home/aboutUs-home.png"/>
+  <div class="absolute inset-0 bg-gradient-to-r from-[#001431]/80 via-[#0B2950]/60 to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
 <div class="max-w-2xl space-y-8">
-<h1 class="font-headline text-5xl md:text-[3rem] font-extrabold text-primary tracking-tighter leading-tight">
+<h1 class="font-headline text-5xl md:text-[3rem] font-extrabold text-white tracking-tighter leading-tight">
                     The future is not waited for. It is created.<br/>
 <span class="text-secondary">Building with efficiency and solidity</span>
 </h1>
-        <p class="text-on-surface-variant text-lg md:text-[1rem] leading-relaxed max-w-xl">
+        <p class="text-white text-lg md:text-[1rem] leading-relaxed max-w-xl">
             <span>Space Solutions of Florida Inc. is a construction company based in Miami, Florida. For years,</span>
             
             <span id="more-text" class="hidden"> we have distinguished ourselves by providing a diverse range of services to our clients, all from a single office and held to the highest standards. It is for this reason, along with the ease and convenience we offer during project execution, that our clients prefer to work with our team.</span>
@@ -195,7 +210,7 @@
 </div>
 <div class="relative">
 <div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl">
-<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="#"/>
+<img alt="Our Work Process" class="w-full h-full object-cover" data-alt="professional interior designer reviewing blueprints in a bright modern minimalist workspace with architectural samples nearby" src="img/home/home.png"/>
 </div>
 <div class="absolute -bottom-8 -left-8 p-8 bg-primary text-on-primary rounded-md hidden md:block max-w-xs shadow-xl">
 <span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
@@ -323,7 +338,7 @@
 <div class="max-w-7xl mx-auto px-8">
 <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
 <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Precision at Every Step</h2>
-<p class="text-on-surface-variant text-lg">We eliminate uncertainty through rigid structural methodology and transparent communication.</p>
+<p class="text-on-surface-variant text-lg"></p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
 <!-- Main Benefit Card -->
@@ -361,7 +376,7 @@
 <span class="material-symbols-outlined text-4xl text-secondary">handyman</span>
 <div class="space-y-4">
 <h3 class="font-headline text-xl font-bold text-primary"></h3>
-<p class="text-on-surface-variant">More than 50 projects completed in the counties of Miami-Dade, Broward, West Palm Beach, Daytona Beach, Tampa, and Orlando.</p>
+<p class="text-on-surface-variant"><b>More than 50 projects completed in the counties of Miami-Dade, Broward, West Palm Beach, Daytona Beach, Tampa, and Orlando.</b></p>
 </div>
 </div>
 </div>
@@ -548,9 +563,26 @@
 <script>
   const navToggle = document.getElementById('nav-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
+  const topNav = document.getElementById('top-nav');
+
   navToggle?.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('hidden') === false;
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
+
+  const updateNavbarBackground = () => {
+    if (!topNav) return;
+    const threshold = 20;
+    if (window.scrollY > threshold) {
+      topNav.classList.remove('bg-transparent', 'nav-transparent');
+      topNav.classList.add('bg-slate-50/80', 'dark:bg-slate-900/80');
+    } else {
+      topNav.classList.add('bg-transparent', 'nav-transparent');
+      topNav.classList.remove('bg-slate-50/80', 'dark:bg-slate-900/80');
+    }
+  };
+
+  updateNavbarBackground();
+  window.addEventListener('scroll', updateNavbarBackground);
 </script>
 </body></html>
