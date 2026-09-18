@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-const RECIPIENT_EMAIL = 'cleibertc@gmail.com';
+const RECIPIENT_EMAIL = 'spacesolutionsoffloridainc@gmail.com';
 const SENDER_EMAIL = 'spacesol@spacesolutionsus.com';
 const SENDER_NAME = 'Space Solutions website';
 
