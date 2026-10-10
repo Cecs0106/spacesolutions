@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/spacesol/public_html/spacesolutions/
+    - export DEPLOYPATH=/home/spacesol/public_html/
     - /bin/cp -R * $DEPLOYPATH
